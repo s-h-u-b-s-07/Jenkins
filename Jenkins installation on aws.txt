@@ -1,0 +1,25 @@
+1. LAUNCH EC2 INSTANCE UBUNTU 20.40
+
+2. CONNECT THROUGH SSH
+
+3. EXECUTE THE FOLLOWING COMMANDS 
+
+---> sudo apt-get update
+---> sudo apt install openjdk-8-jdk
+---> wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+---> sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+---> sudo apt update
+---> sudo apt install jenkins
+---> sudo systemctl status jenkins
+
+
+4. COPY IP ADDRESS AND OPEN WITH :8080 PORT
+
+5. sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+6. CLICK INSTALL SUGGESTED PLUGINS
+
+7. CREAT ADMIN USER  {USERNAME, PASSWORD, FULL NAME EMAIL ADDRESS}
+
+
+[----------JENKINS IS READY!----------]
